@@ -42,13 +42,13 @@ Instructions on how to run the notebook and reproduce the results.
 ### Correlation Matrix of the features
 # ![corrMat](outcome/corrMat.png)
 ### Decision Tree 
-# decisionTree](outcome/decisionTree.pdf)
+# ![decisionTree](outcome/decisionTree.png)
 ### Importance of the Features
 # ![FeatureImportance](outcome/FeatureImportance.png)
 ### Mutual Information 
 # ![mutInfo](outcome/mutInfo.png)
 ### Precision,Recall,Accuracy,F1-score 
-# ![mutInfo](outcome/precision,recall,accuracy,F1-score .png)
+# ![precision](outcome/precision,recall,accuracy,F1-score.png)
 
 ## Conclusion
 
