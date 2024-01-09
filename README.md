@@ -33,24 +33,40 @@ Compared the quantitative importance with initial qualitative estimates.
 
 ## Usage
 
-Instructions on how to run the notebook and reproduce the results.
+Run Q1!.ipynb file 
 
 ## Results and Discussion
 
-### Best Hyperparameters for Decision Tree
-# ![bestHyperpar](outcome/bestHyperpar.png)
 ### Correlation Matrix of the features
 # ![corrMat](outcome/corrMat.png)
-### Decision Tree 
-# ![decisionTree](outcome/decisionTree.png)
-### Importance of the Features
-# ![FeatureImportance](outcome/FeatureImportance.png)
+
+
 ### Mutual Information 
 # ![mutInfo](outcome/mutInfo.png)
+Based on the Mutual Information, the most relevant features are (in descending order):
+- loudness
+- dancability
+- duration_m
+- instrumentalness 
+- acousticness
+
+
+### Best Hyperparameters for Decision Tree
+# ![bestHyperpar](outcome/bestHyperpar.png)
+
+### Decision Tree 
+# ![decisionTree](outcome/decisionTree.png)
+This descision tree conceptualizes the weight importance of each feature at the split. It has 5 levels (excluding gini) which maps on the number of features we are trying to split the data in.
+
+
+### Importance of the Features
+# ![FeatureImportance](outcome/FeatureImportance.png)
+
+
 ### Precision,Recall,Accuracy,F1-score 
 # ![precision](outcome/precision,recall,accuracy,F1-score.png)
 
 ## Conclusion
 
-Summarize the findings and potential future work or improvements.
+The comparison between qualitative estimates from mutual information and decision tree feature importance reveals significant differences. It's essential to recognize that these disparities arise from the use of distinct metrics to evaluate feature relevance. Mutual information quantifies the reduction in uncertainty about the target variable when a feature is known, whereas decision tree feature importance calculates the weighted average reduction in a chosen criterion attributable to a feature across all tree nodes where it's used for splitting. Furthermore, it's crucial to understand that feature importances in decision trees are inherently tied to the model's structure. A feature positioned higher in the tree wields greater influence on subsequent splits, thus accruing more importance in the decision tree model, even if its mutual information value isn't the highest.
 
